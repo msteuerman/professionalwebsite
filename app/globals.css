@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+/*
+  Design commitment: warm off-white background, near-black ink.
+  One accent color only — currently a placeholder terracotta; swap it for a
+  value sampled from the hero photograph once that photo is chosen.
+*/
+:root {
+  --background: #faf8f4; /* warm off-white */
+  --foreground: #1a1a18; /* near-black ink */
+  --muted: #6b6862; /* secondary text */
+  --rule: #e4e0d8; /* hairline borders */
+  --accent: #b4532a; /* placeholder — pull from hero photo */
+}
+
+/* Expose our tokens + fonts to Tailwind utilities (bg-background, text-muted, font-serif, ...) */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-rule: var(--rule);
+  --color-accent: var(--accent);
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-fraunces), ui-serif, Georgia, serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Visible focus states everywhere — accessibility non-negotiable. */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
