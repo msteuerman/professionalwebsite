@@ -13,7 +13,12 @@
   --accent: #b4532a; /* placeholder — pull from hero photo */
 }
 
-/* Expose our tokens + fonts to Tailwind utilities (bg-background, text-muted, font-serif, ...) */
+/*
+  Tokens exposed to Tailwind utilities.
+  Colors:  bg-background text-foreground text-muted border-rule text-accent
+  Type:    text-eyebrow text-h2 text-h1 text-display
+           (companion --*--line-height / --*--letter-spacing set the leading + tracking)
+*/
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -23,6 +28,23 @@
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-serif: var(--font-fraunces), ui-serif, Georgia, serif;
+
+  /* Editorial type scale — fluid, clamped between mobile and desktop. */
+  --text-eyebrow: 0.75rem;
+  --text-eyebrow--line-height: 1;
+  --text-eyebrow--letter-spacing: 0.22em;
+
+  --text-h2: clamp(1.5rem, 1rem + 2vw, 2.125rem);
+  --text-h2--line-height: 1.15;
+  --text-h2--letter-spacing: -0.015em;
+
+  --text-h1: clamp(2rem, 1rem + 4vw, 3.25rem);
+  --text-h1--line-height: 1.1;
+  --text-h1--letter-spacing: -0.02em;
+
+  --text-display: clamp(2.75rem, 1rem + 8vw, 5.5rem);
+  --text-display--line-height: 1.02;
+  --text-display--letter-spacing: -0.03em;
 }
 
 body {
@@ -31,6 +53,22 @@ body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+}
+
+/* Headings are serif and set in a regular weight — contrast comes from size, not bold. */
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+}
+
+/* Smooth anchor scrolling, but not for people who ask for reduced motion. */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 /* Visible focus states everywhere — accessibility non-negotiable. */
