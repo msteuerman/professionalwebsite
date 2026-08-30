@@ -42,3 +42,6 @@ next-env.d.ts
 
 # Claude Code
 .claude/
+
+# Large raw photo alternates kept only locally (chosen raws are committed)
+/photos-raw/_alt-*
