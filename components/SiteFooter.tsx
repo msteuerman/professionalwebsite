@@ -68,15 +68,17 @@ export function SiteFooter() {
                 href={`mailto:${site.email}`}
                 className="text-muted transition-colors hover:text-foreground"
               >
-                Email
+                {site.email}
               </a>
             </li>
             <li>
               <a
-                href={site.resume}
+                href={site.links.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-muted transition-colors hover:text-foreground"
               >
-                Résumé (PDF)
+                LinkedIn
               </a>
             </li>
           </ul>
