@@ -1,5 +1,6 @@
 import { Hero } from "@/components/Hero";
 import { Experience } from "@/components/Experience";
+import { Photography } from "@/components/Photography";
 import { Section } from "@/components/Section";
 
 export default function Home() {
@@ -17,11 +18,7 @@ export default function Home() {
         </p>
       </Section>
 
-      <Section id="photography" eyebrow="03" title="Photography">
-        <p className="max-w-2xl font-sans text-base leading-relaxed text-muted">
-          A curated edit of drone and still work.
-        </p>
-      </Section>
+      <Photography />
 
       <Section id="about" eyebrow="04" title="About">
         <p className="max-w-2xl font-sans text-base leading-relaxed text-muted">

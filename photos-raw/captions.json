@@ -1,0 +1,100 @@
+{
+  "_note": "Per-photo metadata, keyed by the raw filename (without extension). optimize-photos.mjs merges this into data/photos.json. Matthew: refine titles/locations freely — these are drafted.",
+
+  "01-baha-mar-marina": {
+    "title": "Marina",
+    "location": "Baha Mar, Nassau, Bahamas",
+    "year": 2023,
+    "alt": "Aerial view straight down on a curving stone breakwater and empty marina berths in bright turquoise water."
+  },
+  "02-land-and-sea": {
+    "title": "Land's End",
+    "location": "Bahamas",
+    "year": 2023,
+    "alt": "Aerial view of a rocky, scrub-covered headland dropping into clear turquoise shallows."
+  },
+  "03-crashing-waves": {
+    "title": "Break",
+    "location": "Bahamas",
+    "year": 2023,
+    "alt": "Overhead view of a single wave breaking in a long white line across deep emerald water."
+  },
+  "04-shoreline": {
+    "title": "Shoreline",
+    "location": "The Hamptons, New York",
+    "year": 2023,
+    "alt": "Straight-down view of pale sand meeting a band of white surf and dark green ocean."
+  },
+  "05-hamptons-coast": {
+    "title": "Weather Coming In",
+    "location": "The Hamptons, New York",
+    "year": 2023,
+    "alt": "Low aerial of a flat coastline under a heavy grey overcast, dark ocean to one side."
+  },
+  "07-golden-hour-flare": {
+    "title": "Long Shadows",
+    "location": "Winged Foot Golf Club, Mamaroneck, New York",
+    "year": 2022,
+    "alt": "Aerial of a golf fairway at sunrise, low sun flaring through bare trees and casting long shadows across the grass."
+  },
+  "08-twilight-course": {
+    "title": "Blue Hour",
+    "location": "Winged Foot Golf Club, Mamaroneck, New York",
+    "year": 2022,
+    "alt": "Aerial of a golf green and bunkers under a deep magenta twilight sky scattered with faint stars."
+  },
+  "09-fall-foliage-aerial": {
+    "title": "Peak Color",
+    "location": "Winged Foot Golf Club, Mamaroneck, New York",
+    "year": 2022,
+    "alt": "Aerial of a golf hole framed by woods in full orange and red autumn foliage."
+  },
+  "10-bunker-cluster": {
+    "title": "Constellation",
+    "location": "Winged Foot Golf Club, Mamaroneck, New York",
+    "year": 2022,
+    "alt": "Straight-down view of a putting green ringed by a scattered cluster of white sand bunkers."
+  },
+  "11-club-aerial": {
+    "title": "The Grounds",
+    "location": "Winged Foot Golf Club, Mamaroneck, New York",
+    "year": 2022,
+    "alt": "High aerial of a golf course and clubhouse with a body of water on the far horizon."
+  },
+  "12-tenth-bw": {
+    "title": "The Tenth",
+    "location": "Winged Foot Golf Club, Mamaroneck, New York",
+    "year": 2022,
+    "alt": "Black and white aerial of a golf hole with deep, irregular bunkers cut into the fairway below the clubhouse."
+  },
+  "13-casting-shadows": {
+    "title": "Casting Shadows",
+    "location": "Winged Foot Golf Club, Mamaroneck, New York",
+    "year": 2022,
+    "alt": "Black and white close aerial of a kidney-shaped sand bunker crossed by long tree shadows."
+  },
+  "14-low-angle-bunker": {
+    "title": "Low Angle",
+    "location": "Winged Foot Golf Club, Mamaroneck, New York",
+    "year": 2022,
+    "alt": "Black and white low-angle view across a broad fairway bunker toward a line of trees."
+  },
+  "15-washington-hall": {
+    "title": "Colonnade at Night",
+    "location": "Washington & Lee University, Lexington, Virginia",
+    "year": 2023,
+    "alt": "The brick Colonnade buildings of Washington & Lee lit warm against a black sky, with wet pavement in the foreground."
+  },
+  "16-chapel": {
+    "title": "University Chapel",
+    "location": "Washington & Lee University, Lexington, Virginia",
+    "year": 2023,
+    "alt": "Washington & Lee's brick University Chapel and clock tower beneath a dramatic grey sky."
+  },
+  "18-leaf-detail": {
+    "title": "After the Rain",
+    "location": "Lexington, Virginia",
+    "year": 2023,
+    "alt": "Macro photograph of a bright green leaf holding beads of water after rain."
+  }
+}
