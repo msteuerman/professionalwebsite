@@ -8,14 +8,13 @@ export const site = {
   positioning:
     "Incoming Investment Banking Analyst at Deutsche Bank · Photographer · Washington & Lee ’27",
 
-  // TODO(matthew): confirm this is the address you want public on the site.
-  email: "stew1stewy@gmail.com",
+  email: "mjs25514@gmail.com",
 
-  // TODO(matthew): fill in real URLs. "#" renders a dead link for now.
   links: {
-    linkedin: "#",
+    linkedin: "https://www.linkedin.com/in/matthew-steuerman-05bb99217/",
+    // TODO(matthew): add Instagram handle. "#" renders a dead link for now.
     instagram: "#",
-    photoArchive: "#", // the existing Wix gallery
+    photoArchive: "https://matthewsteuerman.wixsite.com/matthewsteuerman",
   },
 
   // Drop the file at public/resume.pdf (build order step: data files).
