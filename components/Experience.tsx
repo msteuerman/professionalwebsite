@@ -5,7 +5,7 @@ export function Experience() {
   return (
     <section id="experience" className="scroll-mt-16 border-t border-rule">
       <Container className="py-20 md:py-28">
-        <p className="text-eyebrow font-sans uppercase text-muted">01</p>
+        <p className="text-eyebrow font-sans uppercase text-muted">02</p>
         <h2 className="mt-4 font-serif text-h2">Experience</h2>
 
         <div className="mt-12 md:mt-16">

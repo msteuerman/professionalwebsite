@@ -1,0 +1,45 @@
+import { Container } from "@/components/Container";
+
+export function About() {
+  return (
+    <section id="about" className="scroll-mt-16 border-t border-rule">
+      <Container className="py-20 md:py-28">
+        <p className="text-eyebrow font-sans uppercase text-muted">01</p>
+        <h2 className="mt-4 font-serif text-h2">About</h2>
+
+        <div className="mt-10 grid gap-10 md:grid-cols-[minmax(0,260px)_1fr] md:gap-16">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/img/headshot.webp"
+            alt="Portrait of Matthew Steuerman"
+            width={900}
+            height={1125}
+            className="aspect-[4/5] w-full max-w-[260px] object-cover"
+          />
+
+          <div className="max-w-2xl space-y-5 font-sans text-base leading-relaxed text-foreground/85">
+            <p>
+              I&rsquo;m a senior at Washington &amp; Lee University, where I study
+              Business Administration and Finance/Accounting with a minor in
+              Philosophy — a combination that&rsquo;s shaped how I think about
+              problems as much as how I model them. I graduate in May 2027 with
+              a 3.85 GPA.
+            </p>
+            <p>
+              On campus, I&rsquo;m Finance &amp; Fundraising Co-Chair for Campus
+              Kitchen and sit on the executive board of the Connolly
+              Entrepreneurship Society. I&rsquo;m drawn to private markets and
+              entrepreneurship — the mechanics of how businesses actually get
+              built, financed, and sold.
+            </p>
+            <p>
+              Outside of coursework I&rsquo;m usually behind a camera, on a golf
+              course, or both — most of the photography on this site comes
+              from one or the other.
+            </p>
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
+}

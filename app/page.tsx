@@ -1,44 +1,63 @@
 import { Hero } from "@/components/Hero";
+import { About } from "@/components/About";
 import { Experience } from "@/components/Experience";
 import { PhotoBreak } from "@/components/PhotoBreak";
 import { Section } from "@/components/Section";
+import { site } from "@/data/site";
 
 export default function Home() {
   return (
     <>
       <Hero />
 
-      <Experience />
+      <About />
 
       <PhotoBreak
-        src="/photos/09-fall-foliage-aerial.webp"
-        alt="Aerial of a golf hole framed by woods in full orange and red autumn foliage."
+        src="/photos/15-washington-hall.webp"
+        alt="The brick Colonnade buildings of Washington & Lee lit warm against a black sky, with wet pavement in the foreground."
       />
 
-      <Section id="work" eyebrow="02" title="Selected Work">
-        <p className="max-w-2xl font-sans text-base leading-relaxed text-muted">
-          Case studies in valuation and strategy: a General Mills–framed
-          acquisition of Country Archer, a Sprouts Farmers Market stock pitch, a
-          lifetime-sports TAM study, and cross-border M&amp;A analysis.
-        </p>
-      </Section>
+      <Experience />
 
       <PhotoBreak
         src="/photos/02-land-and-sea.webp"
         alt="Aerial view of a rocky, scrub-covered headland dropping into clear turquoise shallows."
       />
 
-      <Section id="about" eyebrow="03" title="About">
+      <Section id="contact" eyebrow="03" title="Contact">
         <p className="max-w-2xl font-sans text-base leading-relaxed text-muted">
-          Washington &amp; Lee, Class of 2027 — Business Administration and
-          Finance/Accounting, with a Philosophy minor.
+          The fastest way to reach me is email.
         </p>
-      </Section>
-
-      <Section id="contact" eyebrow="04" title="Contact">
-        <p className="max-w-2xl font-sans text-base leading-relaxed text-muted">
-          Email, LinkedIn, and X.
-        </p>
+        <ul className="mt-6 flex flex-wrap gap-x-8 gap-y-3 font-sans text-base">
+          <li>
+            <a
+              href={`mailto:${site.email}`}
+              className="text-foreground underline decoration-rule underline-offset-4 transition-colors hover:decoration-accent"
+            >
+              {site.email}
+            </a>
+          </li>
+          <li>
+            <a
+              href={site.links.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground underline decoration-rule underline-offset-4 transition-colors hover:decoration-accent"
+            >
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a
+              href={site.links.x}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground underline decoration-rule underline-offset-4 transition-colors hover:decoration-accent"
+            >
+              X
+            </a>
+          </li>
+        </ul>
       </Section>
     </>
   );

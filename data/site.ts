@@ -2,7 +2,7 @@
 export const site = {
   name: "Matthew Steuerman",
   positioning:
-    "Incoming Investment Banking Analyst at Deutsche Bank · Photographer · Washington & Lee ’27",
+    "Senior at Washington & Lee University, Class of 2027 · Incoming Investment Banking Analyst at Deutsche Bank · Photographer",
 
   email: "mjs25514@gmail.com",
 
@@ -15,20 +15,18 @@ export const site = {
   },
 
   // No résumé PDF hosted — Matthew opted out (home address / cell in the file).
-  // Contact is email + LinkedIn + Instagram.
 } as const;
 
 export type NavLink = { label: string; href: string };
 
 /**
- * Primary nav — the résumé sections only. Section links resolve on the home
- * page; using "/#id" (not "#id") so they also work when clicked from a
- * /work/[slug] detail page. Photography is deliberately not here: it's a
- * quiet secondary page linked from the footer, not a competing pillar.
+ * Primary nav, left to right — matches the homepage's scroll order.
+ * "Selected Work" was cut (Aug 2026, Matthew: "redundant and dumb").
+ * Photography is deliberately not here: it's a quiet secondary page linked
+ * from the footer, not a competing pillar.
  */
 export const navLinks: NavLink[] = [
-  { label: "Experience", href: "/#experience" },
-  { label: "Work", href: "/#work" },
   { label: "About", href: "/#about" },
+  { label: "Experience", href: "/#experience" },
   { label: "Contact", href: "/#contact" },
 ];

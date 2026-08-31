@@ -3,6 +3,7 @@ import { Fraunces, Inter } from "next/font/google";
 import "./globals.css";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { site } from "@/data/site";
 
 // Serif for headings — editorial, high-contrast, optical sizing on.
 const fraunces = Fraunces({
@@ -27,21 +28,18 @@ export const metadata: Metadata = {
     default: "Matthew Steuerman",
     template: "%s · Matthew Steuerman",
   },
-  description:
-    "Incoming Investment Banking Analyst at Deutsche Bank · Photographer · Washington & Lee '27",
+  description: site.positioning,
   openGraph: {
     type: "website",
     url: siteUrl,
     title: "Matthew Steuerman",
-    description:
-      "Incoming Investment Banking Analyst at Deutsche Bank · Photographer · Washington & Lee '27",
+    description: site.positioning,
     siteName: "Matthew Steuerman",
   },
   twitter: {
     card: "summary_large_image",
     title: "Matthew Steuerman",
-    description:
-      "Incoming Investment Banking Analyst at Deutsche Bank · Photographer · Washington & Lee '27",
+    description: site.positioning,
   },
 };
 
