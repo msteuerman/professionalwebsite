@@ -1,8 +1,16 @@
+// The hero renders these as two deliberate lines (see components/Hero.tsx).
+// Everywhere else (meta description, OG/Twitter, footer tagline) just wants
+// running text, so `positioning` below joins them with a middot.
+const positioningLine1 = "Senior at Washington & Lee University, Class of 2027";
+const positioningLine2 =
+  "Incoming Investment Banking Analyst at Deutsche Bank · Photographer";
+
 /** Central site content that isn't section-specific. */
 export const site = {
   name: "Matthew Steuerman",
-  positioning:
-    "Senior at Washington & Lee University, Class of 2027 · Incoming Investment Banking Analyst at Deutsche Bank · Photographer",
+  positioningLine1,
+  positioningLine2,
+  positioning: `${positioningLine1} · ${positioningLine2}`,
 
   email: "mjs25514@gmail.com",
 

@@ -36,7 +36,9 @@ export function Hero() {
       <Container className="pt-[14vh] pb-24 md:pt-[18vh]">
         <h1 className="max-w-4xl font-serif text-display">{site.name}</h1>
         <p className="mt-6 max-w-2xl font-sans text-lg leading-relaxed text-foreground/80">
-          {site.positioning}
+          {site.positioningLine1}
+          <br />
+          {site.positioningLine2}
         </p>
         <div className="mt-12 flex items-center gap-3 font-sans text-xs uppercase tracking-[0.22em] text-foreground/60">
           <span>Scroll</span>
