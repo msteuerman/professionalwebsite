@@ -19,23 +19,19 @@ export function About() {
 
           <div className="max-w-2xl space-y-5 font-sans text-base leading-relaxed text-foreground/85">
             <p>
-              I&rsquo;m a senior at Washington &amp; Lee University, where I study
+              I&rsquo;m a senior at Washington &amp; Lee University, studying
               Business Administration and Finance/Accounting with a minor in
-              Philosophy — a combination that&rsquo;s shaped how I think about
-              problems as much as how I model them. I graduate in May 2027 with
-              a 3.85 GPA.
+              Philosophy. I graduate in May 2027 with a 3.85 GPA.
             </p>
             <p>
               On campus, I&rsquo;m Finance &amp; Fundraising Co-Chair for Campus
               Kitchen and sit on the executive board of the Connolly
-              Entrepreneurship Society. I&rsquo;m drawn to private markets and
-              entrepreneurship — the mechanics of how businesses actually get
-              built, financed, and sold.
+              Entrepreneurship Society. I&rsquo;m interested in private markets
+              and entrepreneurship.
             </p>
             <p>
-              Outside of coursework I&rsquo;m usually behind a camera, on a golf
-              course, or both — most of the photography on this site comes
-              from one or the other.
+              Outside of school: golf, photography, the gym, mountain biking,
+              and music.
             </p>
           </div>
         </div>

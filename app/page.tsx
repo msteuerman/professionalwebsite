@@ -13,8 +13,8 @@ export default function Home() {
       <About />
 
       <PhotoBreak
-        src="/photos/15-washington-hall.webp"
-        alt="The brick Colonnade buildings of Washington & Lee lit warm against a black sky, with wet pavement in the foreground."
+        src="/photos/08-twilight-course.webp"
+        alt="Aerial of a golf green and bunkers under a deep magenta twilight sky scattered with faint stars."
       />
 
       <Experience />
