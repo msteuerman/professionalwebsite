@@ -94,6 +94,15 @@ Rendered from `data/experience.ts`. Each entry: company, role, location, dates,
 
 Rule: nothing confidential from Deutsche Bank or Harri. Describe scope and skills, not deal specifics.
 
+Each entry's left column also carries the company's wordmark below location/dates
+(`entry.logo` in `data/experience.ts` → `public/img/logos/`). Sourced from each
+company's own site, then recolored to the site's muted tone (`#6b6862`, matching
+`--muted`) via alpha-channel masking (raster) or fill swap (Davis Polk's SVG) — one flat
+tone across all four so they read as a quiet row, not four competing brand colors.
+Rendered at a fixed height (`h-6`), `opacity-80`, natural width. To add a fifth: pull the
+mark from the company's official site, recolor to `#6b6862`, drop it in
+`public/img/logos/`, reference it from the entry.
+
 ### Selected Work — cut (Aug 2026)
 Was going to be its own page-per-case-study section (Country Archer, Sprouts, lifetime-
 sports TAM, BUS 394 Qatar Airways/General Mills). Matthew killed it as redundant next to
