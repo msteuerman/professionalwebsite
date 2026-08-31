@@ -13,14 +13,14 @@ export default function Home() {
       <About />
 
       <PhotoBreak
-        src="/photos/06-lake-among-trees.webp"
+        src="/photos/07-lake-among-trees.webp"
         alt="Straight-down aerial of a small lake threading through dense woodland in fall color, with one cluster of trees turned bright pink."
       />
 
       <Experience />
 
       <PhotoBreak
-        src="/photos/02-land-and-sea.webp"
+        src="/photos/04-land-and-sea.webp"
         alt="Aerial view of a rocky, scrub-covered headland dropping into clear turquoise shallows."
       />
 

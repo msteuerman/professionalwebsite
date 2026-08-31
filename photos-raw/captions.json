@@ -1,5 +1,5 @@
 {
-  "_note": "Per-photo metadata, keyed by the raw filename (without extension). optimize-photos.mjs merges this into data/photos.json. Matthew: refine titles/locations freely — these are drafted.",
+  "_note": "Per-photo metadata, keyed by the raw filename (without extension). optimize-photos.mjs merges this into data/photos.json, in this key order (which is also gallery order — the numeric filename prefix). Sequence is deliberate: water -> landscape -> golf -> W&L. Matthew: refine titles/locations freely.",
 
   "01-baha-mar-marina": {
     "title": "Marina",
@@ -7,29 +7,23 @@
     "year": 2023,
     "alt": "Aerial view straight down on a curving stone breakwater and empty marina berths in bright turquoise water."
   },
-  "02-land-and-sea": {
-    "title": "Land's End",
-    "location": "Bahamas",
-    "year": 2023,
-    "alt": "Aerial view of a rocky, scrub-covered headland dropping into clear turquoise shallows."
-  },
-  "03-crashing-waves": {
+  "02-crashing-waves": {
     "title": "Break",
     "location": "Bahamas",
     "year": 2023,
     "alt": "Overhead view of a single wave breaking in a long white line across deep emerald water."
   },
-  "04-shoreline": {
+  "03-shoreline": {
     "title": "Shoreline",
     "location": "The Hamptons, New York",
     "year": 2023,
     "alt": "Straight-down view of pale sand meeting a band of white surf and dark green ocean."
   },
-  "06-lake-among-trees": {
-    "title": "A Lake Amongst the Trees",
-    "location": "New York",
+  "04-land-and-sea": {
+    "title": "Land's End",
+    "location": "Bahamas",
     "year": 2023,
-    "alt": "Straight-down aerial of a small lake threading through dense woodland in fall color, with one cluster of trees turned bright pink."
+    "alt": "Aerial view of a rocky, scrub-covered headland dropping into clear turquoise shallows."
   },
   "05-hamptons-coast": {
     "title": "Weather Coming In",
@@ -37,67 +31,61 @@
     "year": 2023,
     "alt": "Low aerial of a flat coastline under a heavy grey overcast, dark ocean to one side."
   },
-  "07-golden-hour-flare": {
-    "title": "Long Shadows",
-    "location": "Winged Foot Golf Club, Mamaroneck, New York",
-    "year": 2022,
-    "alt": "Aerial of a golf fairway at sunrise, low sun flaring through bare trees and casting long shadows across the grass."
-  },
-  "08-storm-lake": {
+  "06-storm-lake": {
     "title": "A Dramatic Sunset Over the Lake",
     "location": "New York",
     "year": 2022,
     "alt": "Aerial of a lake winding through dense forest, dark storm clouds overhead breaking to a band of orange sunset on the horizon."
   },
-  "09-fall-foliage-aerial": {
-    "title": "Peak Color",
+  "07-lake-among-trees": {
+    "title": "A Lake Amongst the Trees",
+    "location": "New York",
+    "year": 2023,
+    "alt": "Straight-down aerial of a small lake threading through dense woodland in fall color, with one cluster of trees turned bright pink."
+  },
+  "08-golden-hour-flare": {
+    "title": "Long Shadows",
     "location": "Winged Foot Golf Club, Mamaroneck, New York",
     "year": 2022,
-    "alt": "Aerial of a golf hole framed by woods in full orange and red autumn foliage."
+    "alt": "Aerial of a golf fairway at sunrise, low sun flaring through bare trees and casting long shadows across the grass."
   },
-  "10-bunker-cluster": {
+  "09-bunker-cluster": {
     "title": "Constellation",
     "location": "Winged Foot Golf Club, Mamaroneck, New York",
     "year": 2022,
     "alt": "Straight-down view of a putting green ringed by a scattered cluster of white sand bunkers."
   },
-  "11-club-aerial": {
-    "title": "The Grounds",
+  "10-fall-foliage-aerial": {
+    "title": "Peak Color",
     "location": "Winged Foot Golf Club, Mamaroneck, New York",
     "year": 2022,
-    "alt": "High aerial of a golf course and clubhouse with a body of water on the far horizon."
+    "alt": "Aerial of a golf hole framed by woods in full orange and red autumn foliage."
   },
-  "12-tenth-bw": {
+  "11-tenth-bw": {
     "title": "The Tenth",
     "location": "Winged Foot Golf Club, Mamaroneck, New York",
     "year": 2022,
     "alt": "Black and white aerial of a golf hole with deep, irregular bunkers cut into the fairway below the clubhouse."
   },
-  "13-casting-shadows": {
+  "12-casting-shadows": {
     "title": "Casting Shadows",
     "location": "Winged Foot Golf Club, Mamaroneck, New York",
     "year": 2022,
     "alt": "Black and white close aerial of a kidney-shaped sand bunker crossed by long tree shadows."
   },
-  "14-low-angle-bunker": {
-    "title": "Low Angle",
-    "location": "Winged Foot Golf Club, Mamaroneck, New York",
-    "year": 2022,
-    "alt": "Black and white low-angle view across a broad fairway bunker toward a line of trees."
-  },
-  "15-washington-hall": {
+  "13-washington-hall": {
     "title": "Colonnade at Night",
     "location": "Washington & Lee University, Lexington, Virginia",
     "year": 2023,
     "alt": "The brick Colonnade buildings of Washington & Lee lit warm against a black sky, with wet pavement in the foreground."
   },
-  "16-chapel": {
+  "14-chapel": {
     "title": "University Chapel",
     "location": "Washington & Lee University, Lexington, Virginia",
     "year": 2023,
     "alt": "Washington & Lee's brick University Chapel and clock tower beneath a dramatic grey sky."
   },
-  "18-leaf-detail": {
+  "15-leaf-detail": {
     "title": "After the Rain",
     "location": "Lexington, Virginia",
     "year": 2023,

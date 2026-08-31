@@ -12,20 +12,8 @@
     "blurDataURL": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAwBACdASoUAAsAPxF2sVCsJySisAgBgCIJbACdMoRwACmXpbLUdDqlAgAA/m9eknJIStbOty+QPSHS/E8+FwiOZ4HeCtvhvGb9w2UGwrH23tA2FZsFg5OR29fwDj1drqRd50gA"
   },
   {
-    "src": "/photos/02-land-and-sea.webp",
-    "thumb": "/photos/02-land-and-sea-thumb.webp",
-    "alt": "Aerial view of a rocky, scrub-covered headland dropping into clear turquoise shallows.",
-    "title": "Land's End",
-    "location": "Bahamas",
-    "year": 2023,
-    "orientation": "landscape",
-    "width": 2000,
-    "height": 1125,
-    "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQBACdASoUAAsAPxFwsFAsJiSisAgBgCIJbACdMoAC/JjyGrzGzAW1wAD+oNAGgYJk63p+ANJEXS/myCeB2oIyYS5y51hPW5VaoD72dEQAAA=="
-  },
-  {
-    "src": "/photos/03-crashing-waves.webp",
-    "thumb": "/photos/03-crashing-waves-thumb.webp",
+    "src": "/photos/02-crashing-waves.webp",
+    "thumb": "/photos/02-crashing-waves-thumb.webp",
     "alt": "Overhead view of a single wave breaking in a long white line across deep emerald water.",
     "title": "Break",
     "location": "Bahamas",
@@ -36,8 +24,8 @@
     "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAwCdASoUAAsAPxF2sVCsJySisAgBgCIJagCdMoMljEl5LPUKUa2AAP6yCQLLWOj2ZXJPbFl6tCYCSYcgGGDx6m/Xet52B4TPLu+ehW/4NnpuwzP4ITiAAAA="
   },
   {
-    "src": "/photos/04-shoreline.webp",
-    "thumb": "/photos/04-shoreline-thumb.webp",
+    "src": "/photos/03-shoreline.webp",
+    "thumb": "/photos/03-shoreline-thumb.webp",
     "alt": "Straight-down view of pale sand meeting a band of white surf and dark green ocean.",
     "title": "Shoreline",
     "location": "The Hamptons, New York",
@@ -46,6 +34,18 @@
     "width": 2000,
     "height": 1125,
     "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAwCdASoUAAsAPxF0sFAsJySisAgBgCIJZACdACHYLfQPjT+6uluyAP7Dsmp5oQ5CXoJrsVRDp9MUAl4l/6xX+LVbFOUT5RozxJ2MJRUCAAAA"
+  },
+  {
+    "src": "/photos/04-land-and-sea.webp",
+    "thumb": "/photos/04-land-and-sea-thumb.webp",
+    "alt": "Aerial view of a rocky, scrub-covered headland dropping into clear turquoise shallows.",
+    "title": "Land's End",
+    "location": "Bahamas",
+    "year": 2023,
+    "orientation": "landscape",
+    "width": 2000,
+    "height": 1125,
+    "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQBACdASoUAAsAPxFwsFAsJiSisAgBgCIJbACdMoAC/JjyGrzGzAW1wAD+oNAGgYJk63p+ANJEXS/myCeB2oIyYS5y51hPW5VaoD72dEQAAA=="
   },
   {
     "src": "/photos/05-hamptons-coast.webp",
@@ -60,32 +60,8 @@
     "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACQAwCdASoUAAsAPxF0sFCsJqSisAgBgCIJZQC7ABOuNSeHLg8AAP5wcC6oorrh4TCyL1DoOHVIv/g9AauVMy2RBka2yTfPcHJz4AAA"
   },
   {
-    "src": "/photos/06-lake-among-trees.webp",
-    "thumb": "/photos/06-lake-among-trees-thumb.webp",
-    "alt": "Straight-down aerial of a small lake threading through dense woodland in fall color, with one cluster of trees turned bright pink.",
-    "title": "A Lake Amongst the Trees",
-    "location": "New York",
-    "year": 2023,
-    "orientation": "landscape",
-    "width": 1400,
-    "height": 788,
-    "blurDataURL": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAAAQBACdASoUAAsAPxFwsFAsJiSisAgBgCIJbAC1B8ABo+0UuBP1KgZgAAD9ItmaBuWnKuEoZfPvrAGR+vu9g0K1SvVYquZz1kMAWJm/BSnGGGXNIPBTSH93LE2px2og0m+RRP/o696ktzKiGl3GY02qQxbXiiDlKLAAAA=="
-  },
-  {
-    "src": "/photos/07-golden-hour-flare.webp",
-    "thumb": "/photos/07-golden-hour-flare-thumb.webp",
-    "alt": "Aerial of a golf fairway at sunrise, low sun flaring through bare trees and casting long shadows across the grass.",
-    "title": "Long Shadows",
-    "location": "Winged Foot Golf Club, Mamaroneck, New York",
-    "year": 2022,
-    "orientation": "landscape",
-    "width": 2000,
-    "height": 1125,
-    "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAwCdASoUAAsAPxFysFAsJqSisAgBgCIJZgC7ACP7oawXKM/ytbAAAP6yLP0ZMFu5rbsjN/freTX+9GfKPb41zuYc+Bwe0dv69SxCWIjfpBEQvWv3j1AAAAA="
-  },
-  {
-    "src": "/photos/08-storm-lake.webp",
-    "thumb": "/photos/08-storm-lake-thumb.webp",
+    "src": "/photos/06-storm-lake.webp",
+    "thumb": "/photos/06-storm-lake-thumb.webp",
     "alt": "Aerial of a lake winding through dense forest, dark storm clouds overhead breaking to a band of orange sunset on the horizon.",
     "title": "A Dramatic Sunset Over the Lake",
     "location": "New York",
@@ -96,20 +72,32 @@
     "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQBACdASoUAAsAPxF0sVCsJqSisAgBgCIJYwCdEf/gOzmmn2MUv4IzAAD+eFuDMEBlHvKtApAoCnnCLvT4ybBvG+cAjg9cVFze7nW/WLrwlc+nnCgnuZig3vSaOuAA"
   },
   {
-    "src": "/photos/09-fall-foliage-aerial.webp",
-    "thumb": "/photos/09-fall-foliage-aerial-thumb.webp",
-    "alt": "Aerial of a golf hole framed by woods in full orange and red autumn foliage.",
-    "title": "Peak Color",
+    "src": "/photos/07-lake-among-trees.webp",
+    "thumb": "/photos/07-lake-among-trees-thumb.webp",
+    "alt": "Straight-down aerial of a small lake threading through dense woodland in fall color, with one cluster of trees turned bright pink.",
+    "title": "A Lake Amongst the Trees",
+    "location": "New York",
+    "year": 2023,
+    "orientation": "landscape",
+    "width": 1400,
+    "height": 788,
+    "blurDataURL": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAAAQBACdASoUAAsAPxFwsFAsJiSisAgBgCIJbAC1B8ABo+0UuBP1KgZgAAD9ItmaBuWnKuEoZfPvrAGR+vu9g0K1SvVYquZz1kMAWJm/BSnGGGXNIPBTSH93LE2px2og0m+RRP/o696ktzKiGl3GY02qQxbXiiDlKLAAAA=="
+  },
+  {
+    "src": "/photos/08-golden-hour-flare.webp",
+    "thumb": "/photos/08-golden-hour-flare-thumb.webp",
+    "alt": "Aerial of a golf fairway at sunrise, low sun flaring through bare trees and casting long shadows across the grass.",
+    "title": "Long Shadows",
     "location": "Winged Foot Golf Club, Mamaroneck, New York",
     "year": 2022,
     "orientation": "landscape",
     "width": 2000,
     "height": 1125,
-    "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADwAwCdASoUAAsAPxFwsFAsJiSisAgBgCIJQBOgBH3ABKeSR1Q4B7IAAPC/TYIW17+no3Z42phO4NPaCtV0LtaUQeTTeOtql5rwvS/NL2Aaw6yvpRTzAj2OQ1btc860AAA="
+    "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAwCdASoUAAsAPxFysFAsJqSisAgBgCIJZgC7ACP7oawXKM/ytbAAAP6yLP0ZMFu5rbsjN/freTX+9GfKPb41zuYc+Bwe0dv69SxCWIjfpBEQvWv3j1AAAAA="
   },
   {
-    "src": "/photos/10-bunker-cluster.webp",
-    "thumb": "/photos/10-bunker-cluster-thumb.webp",
+    "src": "/photos/09-bunker-cluster.webp",
+    "thumb": "/photos/09-bunker-cluster-thumb.webp",
     "alt": "Straight-down view of a putting green ringed by a scattered cluster of white sand bunkers.",
     "title": "Constellation",
     "location": "Winged Foot Golf Club, Mamaroneck, New York",
@@ -120,20 +108,20 @@
     "blurDataURL": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAACQAwCdASoUAAsAPxFysFAsJqSisAgBgCIJQBhQAgIOc771s2wAAPDavamOmOUx9nVcfKBqsNIEOqbUO6ADCIyAMwbw+e9+HF161GmOCrZV40IlUXuVhC6scA7mR+Ma+EAAAA=="
   },
   {
-    "src": "/photos/11-club-aerial.webp",
-    "thumb": "/photos/11-club-aerial-thumb.webp",
-    "alt": "High aerial of a golf course and clubhouse with a body of water on the far horizon.",
-    "title": "The Grounds",
+    "src": "/photos/10-fall-foliage-aerial.webp",
+    "thumb": "/photos/10-fall-foliage-aerial-thumb.webp",
+    "alt": "Aerial of a golf hole framed by woods in full orange and red autumn foliage.",
+    "title": "Peak Color",
     "location": "Winged Foot Golf Club, Mamaroneck, New York",
     "year": 2022,
     "orientation": "landscape",
     "width": 2000,
     "height": 1125,
-    "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAwCdASoUAAsAPxFysFAsJqSisAgBgCIJZACw7B45gKwOfSFd2/wA/VOM6G6CxQIYQ5cAG0nRZ6nahC1jb6vUZfDr4VuUNyE1l+kUbe7745kuL4V/gAAA"
+    "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADwAwCdASoUAAsAPxFwsFAsJiSisAgBgCIJQBOgBH3ABKeSR1Q4B7IAAPC/TYIW17+no3Z42phO4NPaCtV0LtaUQeTTeOtql5rwvS/NL2Aaw6yvpRTzAj2OQ1btc860AAA="
   },
   {
-    "src": "/photos/12-tenth-bw.webp",
-    "thumb": "/photos/12-tenth-bw-thumb.webp",
+    "src": "/photos/11-tenth-bw.webp",
+    "thumb": "/photos/11-tenth-bw-thumb.webp",
     "alt": "Black and white aerial of a golf hole with deep, irregular bunkers cut into the fairway below the clubhouse.",
     "title": "The Tenth",
     "location": "Winged Foot Golf Club, Mamaroneck, New York",
@@ -144,8 +132,8 @@
     "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQBACdASoUAAsAPxFysFAsJqSisAgBgCIJaQAAXE8HBhhPIOKIuoigAAD+2PEP9MEplkbGVshVsSW2rDn14YKHIokCFTOC6/RPvyQAIcqAAAAA"
   },
   {
-    "src": "/photos/13-casting-shadows.webp",
-    "thumb": "/photos/13-casting-shadows-thumb.webp",
+    "src": "/photos/12-casting-shadows.webp",
+    "thumb": "/photos/12-casting-shadows-thumb.webp",
     "alt": "Black and white close aerial of a kidney-shaped sand bunker crossed by long tree shadows.",
     "title": "Casting Shadows",
     "location": "Winged Foot Golf Club, Mamaroneck, New York",
@@ -156,20 +144,8 @@
     "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAACwAwCdASoUAAsAPxFysFAsJqSisAgBgCIJaQAARor3Kv4usfFpAAD+P/vdf5YlUIMi9q8096fpbQUka68QYv+CJyKyEUyteOLFUyvtVKERoS99MoAAAA=="
   },
   {
-    "src": "/photos/14-low-angle-bunker.webp",
-    "thumb": "/photos/14-low-angle-bunker-thumb.webp",
-    "alt": "Black and white low-angle view across a broad fairway bunker toward a line of trees.",
-    "title": "Low Angle",
-    "location": "Winged Foot Golf Club, Mamaroneck, New York",
-    "year": 2022,
-    "orientation": "landscape",
-    "width": 2000,
-    "height": 1125,
-    "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAACwAwCdASoUAAsAPxFwsFAsJiSisAgBgCIJaQAAYXj6mqPd04lIAAD7I3hvA+6WX7nqr+i63bmLmSgPEktesQBdMjqhlO8vty0WXDvNAMFjxHzt4+T5/XgAAAA="
-  },
-  {
-    "src": "/photos/15-washington-hall.webp",
-    "thumb": "/photos/15-washington-hall-thumb.webp",
+    "src": "/photos/13-washington-hall.webp",
+    "thumb": "/photos/13-washington-hall-thumb.webp",
     "alt": "The brick Colonnade buildings of Washington & Lee lit warm against a black sky, with wet pavement in the foreground.",
     "title": "Colonnade at Night",
     "location": "Washington & Lee University, Lexington, Virginia",
@@ -180,8 +156,8 @@
     "blurDataURL": "data:image/webp;base64,UklGRqAAAABXRUJQVlA4IJQAAACQBACdASoUABsAPxGCuFWsKKUjKAgBgCIJQBerCtn6pqnujCh0glMKFCrYflAA/vhNmvaHAR2W5dG4wuJRA6kypaos22QuOBMGPEg8374fjMzKn061i1VFv67AIUQhsAAmWpkyS1DINcpxhDo0/RNbI1QnM1/jYelbDIByAarrcpYQgXWMwc84uP4TDfUoCk84wAAA"
   },
   {
-    "src": "/photos/16-chapel.webp",
-    "thumb": "/photos/16-chapel-thumb.webp",
+    "src": "/photos/14-chapel.webp",
+    "thumb": "/photos/14-chapel-thumb.webp",
     "alt": "Washington & Lee's brick University Chapel and clock tower beneath a dramatic grey sky.",
     "title": "University Chapel",
     "location": "Washington & Lee University, Lexington, Virginia",
@@ -192,8 +168,8 @@
     "blurDataURL": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAAAQBQCdASoUABsAPxF2sVAsJ6SisAgBgCIJQBnHBDf79yLiuurukmvcN73ZdwOf7MUAAP7Er4SLb17o+Cj6hLzGlsiv88oQZM2TfAKhhVcs9By6QHHcbxPWny069C5ufopyQ9u916eB+HjA0FCij93ZDA31Nal3D2yadSnZ2kf/GMS8v4d3z5QDYuDhobXM4XNSPDGVJBLa/hwRbAAAAA=="
   },
   {
-    "src": "/photos/18-leaf-detail.webp",
-    "thumb": "/photos/18-leaf-detail-thumb.webp",
+    "src": "/photos/15-leaf-detail.webp",
+    "thumb": "/photos/15-leaf-detail-thumb.webp",
     "alt": "Macro photograph of a bright green leaf holding beads of water after rain.",
     "title": "After the Rain",
     "location": "Lexington, Virginia",
