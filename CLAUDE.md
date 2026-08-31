@@ -78,11 +78,10 @@ Committee for Campus Kitchen (current, as of Aug 2026); interested in private ma
 and entrepreneurship; hobbies stated plainly — golf, photography, the gym, mountain
 biking, music.
 
-Matthew is a senior and has dropped some commitments — do not list these as current:
-**Connolly Entrepreneurship Society (CES)** — was a member, not currently involved.
-**W&L Hillel** — was Executive Vice President, not currently involved. Neither appears
-on the site; if past leadership ever needs surfacing, phrase it explicitly in the past
-tense.
+Matthew is a senior and has dropped some commitments. Two now appear on the page, but
+explicitly in the past tense — never re-promote either to present tense as "current":
+**Connolly Entrepreneurship Society (CES)** — was a member.
+**W&L Hillel** — was Executive Vice President.
 
 ### 3. Experience
 Rendered from `data/experience.ts`. Each entry: company, role, location, dates,

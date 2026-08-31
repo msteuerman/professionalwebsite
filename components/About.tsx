@@ -25,8 +25,10 @@ export function About() {
             </p>
             <p>
               On campus, I&rsquo;m on the Executive Board and Finance &amp;
-              Fundraising Committee for Campus Kitchen. I&rsquo;m interested in
-              private markets and entrepreneurship.
+              Fundraising Committee for Campus Kitchen. I was also a member of
+              the Connolly Entrepreneurship Society and served as Executive
+              Vice President of W&amp;L Hillel. I&rsquo;m interested in private
+              markets and entrepreneurship.
             </p>
             <p>
               Outside of school: golf, photography, the gym, mountain biking,
