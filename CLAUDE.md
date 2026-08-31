@@ -103,6 +103,12 @@ Rendered at a fixed height (`h-6`), `opacity-80`, natural width. To add a fifth:
 mark from the company's official site, recolor to `#6b6862`, drop it in
 `public/img/logos/`, reference it from the entry.
 
+Deutsche Bank's is a composite (Matthew wanted the full box-mark + wordmark lockup, not
+just the wordmark): the box-and-slash mark from Wikimedia Commons
+(`Deutsche_Bank_logo_without_wordmark.svg`, public domain vector) placed left of the
+"Deutsche Bank" wordmark cropped from db.com's own asset, matched to the mark's
+cap-height, both recolored together.
+
 ### Selected Work — cut (Aug 2026)
 Was going to be its own page-per-case-study section (Country Archer, Sprouts, lifetime-
 sports TAM, BUS 394 Qatar Airways/General Mills). Matthew killed it as redundant next to
