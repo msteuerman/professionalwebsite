@@ -8,7 +8,9 @@ export const site = {
 
   links: {
     linkedin: "https://www.linkedin.com/in/matthew-steuerman-05bb99217/",
+    x: "https://x.com/mattsteuerman",
     instagram: "https://www.instagram.com/matthewsteuerman/",
+    linktree: "https://linktr.ee/matthewsteuerman",
     photoArchive: "https://matthewsteuerman.wixsite.com/matthewsteuerman",
   },
 
@@ -19,13 +21,14 @@ export const site = {
 export type NavLink = { label: string; href: string };
 
 /**
- * Primary nav. Section links resolve on the home page; using "/#id" (not "#id")
- * so they also work when clicked from a /work/[slug] detail page.
+ * Primary nav — the résumé sections only. Section links resolve on the home
+ * page; using "/#id" (not "#id") so they also work when clicked from a
+ * /work/[slug] detail page. Photography is deliberately not here: it's a
+ * quiet secondary page linked from the footer, not a competing pillar.
  */
 export const navLinks: NavLink[] = [
   { label: "Experience", href: "/#experience" },
   { label: "Work", href: "/#work" },
-  { label: "Photography", href: "/#photography" },
   { label: "About", href: "/#about" },
   { label: "Contact", href: "/#contact" },
 ];

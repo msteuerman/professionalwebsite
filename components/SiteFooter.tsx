@@ -2,9 +2,12 @@ import Link from "next/link";
 import { navLinks, site } from "@/data/site";
 
 const elsewhere = [
-  { label: "LinkedIn", href: site.links.linkedin },
-  { label: "Instagram", href: site.links.instagram },
-  { label: "Photo archive", href: site.links.photoArchive },
+  { label: "LinkedIn", href: site.links.linkedin, external: true },
+  { label: "X", href: site.links.x, external: true },
+  { label: "Instagram", href: site.links.instagram, external: true },
+  { label: "Linktree", href: site.links.linktree, external: true },
+  { label: "Photography", href: "/photography", external: false },
+  { label: "Full photo archive", href: site.links.photoArchive, external: true },
 ];
 
 function ColumnHeading({ children }: { children: string }) {
@@ -45,18 +48,29 @@ export function SiteFooter() {
         <nav aria-label="Elsewhere">
           <ColumnHeading>Elsewhere</ColumnHeading>
           <ul className="mt-4 space-y-2 font-sans text-sm">
-            {elsewhere.map((link) => (
-              <li key={link.label}>
-                <a
-                  href={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted transition-colors hover:text-foreground"
-                >
-                  {link.label}
-                </a>
-              </li>
-            ))}
+            {elsewhere.map((link) =>
+              link.external ? (
+                <li key={link.label}>
+                  <a
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-muted transition-colors hover:text-foreground"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ) : (
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
+                    className="text-muted transition-colors hover:text-foreground"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ),
+            )}
           </ul>
         </nav>
 
@@ -88,7 +102,7 @@ export function SiteFooter() {
       <div className="border-t border-rule/60">
         <div className="mx-auto w-full max-w-5xl px-6 py-6 md:px-10">
           <p className="font-sans text-xs text-muted">
-            © {year} {site.name}. All photographs are the artist’s own.
+            © {year} {site.name}. All photographs on this site were taken by Matthew.
           </p>
         </div>
       </div>
