@@ -28,13 +28,14 @@ export const site = {
 export type NavLink = { label: string; href: string };
 
 /**
- * Primary nav, left to right — matches the homepage's scroll order.
- * "Selected Work" was cut (Aug 2026, Matthew: "redundant and dumb").
- * Photography is deliberately not here: it's a quiet secondary page linked
- * from the footer, not a competing pillar.
+ * Primary nav, left to right. "Selected Work" was cut (Aug 2026, Matthew:
+ * "redundant and dumb"). Photography moved back into primary nav (Sep 2026,
+ * Matthew's launch-checklist note) — it's a real page (/photography), not a
+ * homepage anchor, so it doesn't take a "/#id" href like the others.
  */
 export const navLinks: NavLink[] = [
   { label: "About", href: "/#about" },
   { label: "Experience", href: "/#experience" },
+  { label: "Photography", href: "/photography/" },
   { label: "Contact", href: "/#contact" },
 ];

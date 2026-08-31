@@ -21,7 +21,8 @@ export function About() {
             <p>
               I&rsquo;m a senior at Washington &amp; Lee University, studying
               Business Administration and Finance/Accounting with a minor in
-              Philosophy. I graduate in May 2027 with a 3.85 GPA.
+              Philosophy. I graduate in May 2027 with a 3.85 GPA, President&rsquo;s
+              List, and a Phi Sigma Tau induction.
             </p>
             <p>
               On campus, I&rsquo;m on the Executive Board and Finance &amp;

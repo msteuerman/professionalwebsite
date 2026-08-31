@@ -6,7 +6,16 @@ import { site } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Photography",
-  description: "A curated edit of aerial and still photography by Matthew Steuerman.",
+  description: "A curated selection of aerial and still photography by Matthew Steuerman.",
+  alternates: {
+    canonical: "/photography",
+  },
+  openGraph: {
+    url: "/photography",
+    title: "Photography · Matthew Steuerman",
+    description: "A curated selection of aerial and still photography by Matthew Steuerman.",
+    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Matthew Steuerman" }],
+  },
 };
 
 export default function PhotographyPage() {
@@ -20,7 +29,7 @@ export default function PhotographyPage() {
       <h1 className="mt-4 font-serif text-h1">Photography</h1>
       <p className="mt-4 max-w-2xl font-sans text-base leading-relaxed text-foreground/80">
         Mostly shot from a drone — coastlines, and the golf courses I grew up
-        on. A working edit; the fuller archive is linked below.
+        on. A curated selection; the fuller archive is linked below.
       </p>
 
       <Gallery />

@@ -1,13 +1,14 @@
 import Link from "next/link";
 import { navLinks, site } from "@/data/site";
 
+// All external — Photography is a primary nav item now (data/site.ts), so it
+// shows up in the "Navigate" column below instead of duplicating here.
 const elsewhere = [
-  { label: "LinkedIn", href: site.links.linkedin, external: true },
-  { label: "X", href: site.links.x, external: true },
-  { label: "Instagram", href: site.links.instagram, external: true },
-  { label: "Linktree", href: site.links.linktree, external: true },
-  { label: "Photography", href: "/photography", external: false },
-  { label: "Full photo archive", href: site.links.photoArchive, external: true },
+  { label: "LinkedIn", href: site.links.linkedin },
+  { label: "X", href: site.links.x },
+  { label: "Instagram", href: site.links.instagram },
+  { label: "Linktree", href: site.links.linktree },
+  { label: "Full photo archive", href: site.links.photoArchive },
 ];
 
 function ColumnHeading({ children }: { children: string }) {
@@ -48,29 +49,18 @@ export function SiteFooter() {
         <nav aria-label="Elsewhere">
           <ColumnHeading>Elsewhere</ColumnHeading>
           <ul className="mt-4 space-y-2 font-sans text-sm">
-            {elsewhere.map((link) =>
-              link.external ? (
-                <li key={link.label}>
-                  <a
-                    href={link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-muted transition-colors hover:text-foreground"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ) : (
-                <li key={link.label}>
-                  <Link
-                    href={link.href}
-                    className="text-muted transition-colors hover:text-foreground"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ),
-            )}
+            {elsewhere.map((link) => (
+              <li key={link.label}>
+                <a
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted transition-colors hover:text-foreground"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
           </ul>
         </nav>
 

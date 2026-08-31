@@ -1,11 +1,25 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { navLinks, site } from "@/data/site";
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
+  const toggleRef = useRef<HTMLButtonElement>(null);
+
+  // Escape closes the mobile panel and returns focus to the toggle.
+  useEffect(() => {
+    if (!open) return;
+    function onKey(e: KeyboardEvent) {
+      if (e.key === "Escape") {
+        setOpen(false);
+        toggleRef.current?.focus();
+      }
+    }
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [open]);
 
   return (
     <header className="sticky top-0 z-50 border-b border-rule/70 bg-background/85 backdrop-blur-sm">
@@ -36,6 +50,7 @@ export function SiteHeader() {
 
         {/* Mobile toggle */}
         <button
+          ref={toggleRef}
           type="button"
           aria-expanded={open}
           aria-controls="mobile-nav"

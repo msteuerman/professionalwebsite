@@ -29,17 +29,22 @@ export const metadata: Metadata = {
     template: "%s · Matthew Steuerman",
   },
   description: site.positioning,
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     type: "website",
     url: siteUrl,
     title: "Matthew Steuerman",
     description: site.positioning,
     siteName: "Matthew Steuerman",
+    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Matthew Steuerman" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Matthew Steuerman",
     description: site.positioning,
+    images: ["/og.jpg"],
   },
 };
 

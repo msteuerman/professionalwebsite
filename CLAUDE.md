@@ -22,7 +22,7 @@ Built for a Global Strategy / AI course assignment — must be genuinely impress
 - Fully responsive; test at 375px, 768px, 1440px
 - No images over 400KB
 - Accessible: real alt text on every photo, semantic headings, visible focus states
-- Open Graph image + favicon configured
+- ✅ Open Graph image + favicon configured (Sep 2026 — see Launch checklist)
 - No lorem ipsum anywhere at deploy time
 
 ## Design direction
@@ -38,9 +38,10 @@ second competing identity next to the resume.
   one clean sans for body (Inter, Geist). Large type scale. Tight tracking on headings.
 - Palette: near-black background OR warm off-white — pick one and commit. One accent color
   only, pulled from a hero photograph.
-- Photography as structure only: full-bleed hero, 1–2 full-width image breaks between
-  sections. No dedicated "Photography" section competing with Experience/About in the
-  main scroll or nav — see Structure §4.
+- Photography as structure on the homepage: full-bleed hero, 1–2 full-width image breaks
+  between sections, no caption/link. The full gallery is its own page — see Structure §4
+  — and (Sep 2026) is back in primary nav; it's a credibility/craft page now, not a
+  homepage section competing with Experience.
 - Generous whitespace. Long scroll. Restraint over animation.
 - Subtle scroll-reveal at most. No parallax, no particle effects, no gradient mesh blobs.
 
@@ -57,9 +58,10 @@ treat the personal site as a link hub, not a showcase.
 ## Structure
 
 Nav (`data/site.ts` → `navLinks`) is exactly, left to right: **About · Experience ·
-Contact.** Section order on the homepage matches nav order. Photography is not a nav
-item — see §4. "Selected Work" was cut entirely (Aug 2026, Matthew: "redundant and
-dumb") — it doubled up with Experience without adding anything a resume-first site needs.
+Photography · Contact.** (Photography rejoined primary nav Sep 2026 — see §4 for why it
+left and came back.) Homepage section order matches the anchor items: About, Experience,
+Contact. "Selected Work" was cut entirely (Aug 2026, Matthew: "redundant and dumb") — it
+doubled up with Experience without adding anything a resume-first site needs.
 
 ### 1. Hero
 - Full-bleed photograph (Matthew's own work)
@@ -83,6 +85,20 @@ explicitly in the past tense — never re-promote either to present tense as "cu
 **Connolly Entrepreneurship Society (CES)** — was a member.
 **W&L Hillel** — was Executive Vice President.
 
+Academic honors (Phi Sigma Tau induction, President's List) are in paragraph 1 with the
+GPA. Sep 2026 — Matthew offered a larger pool of material via his LinkedIn education
+section and pre-college jobs; deliberately **not** added, to keep About from creeping
+back toward "corny"/CV-dump:
+- Pre-college jobs (Scarsdale Inquirer sports journalism, Fenway Golf Club caddie,
+  Scarsdale Little League umpire) — high-school-era, and don't fit next to the
+  college-internship Experience section either.
+- Further W&L activities beyond Campus Kitchen/Connolly/Hillel (THaC Lab research
+  assistant, MockCon NY delegate, Outing Club) and all high-school activities/honors
+  (SIGNIFER Honor Society, Business Club President, Yearbook Head Photographer, Peer
+  Leadership, Varsity Golfer) — reasonable material, but the site's whole point (see
+  Design direction) is restraint over a full activities list. Revisit only if Matthew
+  explicitly asks for more, not by default.
+
 ### 3. Experience
 Rendered from `data/experience.ts`. Each entry: company, role, location, dates,
 2–3 sentences of prose (NOT bulleted LinkedIn copy), and outcome where one exists.
@@ -93,6 +109,11 @@ Rendered from `data/experience.ts`. Each entry: company, role, location, dates,
 - Data Intensity — sales enablement (Summers 2021–22)
 
 Rule: nothing confidential from Deutsche Bank or Harri. Describe scope and skills, not deal specifics.
+
+Body copy was tightened ~20% (Sep 2026, Matthew's launch-checklist note) — cut filler
+("Day to day meant...") and merged clauses rather than dropping technical nouns; every
+skill/deliverable that was named before is still named. If editing further, keep that
+ratio: substance and specificity survive, connective tissue doesn't.
 
 Each entry's left column also carries the company's wordmark below location/dates
 (`entry.logo` in `data/experience.ts` → `public/img/logos/`). Sourced from each
@@ -115,22 +136,31 @@ sports TAM, BUS 394 Qatar Airways/General Mills). Matthew killed it as redundant
 Experience. Case-study writeups may resurface later as plain linked PDFs rather than a
 dedicated site section, if at all — no `/work/[slug]` routes exist.
 
-### 4. Photography — secondary page, not a main-nav section
-Not in the top nav and not in the homepage's numbered scroll (About/Experience/Contact
-only). Lives at `/photography`, linked quietly from the footer next to Linktree.
-Homepage instead gets 1–2 full-bleed `PhotoBreak` images between sections (no caption,
-no link — just texture; the footer's blanket photo credit covers them).
+### 4. Photography — its own page, in primary nav
+Lives at `/photography`. Cut from primary nav Aug 2026 (demoted to a quiet footer link,
+to keep the homepage resume-first); put back in primary nav Sep 2026 on Matthew's
+launch-checklist note — treat it as a craft/credibility page, not a competing homepage
+section. Homepage still only gets 1–2 full-bleed `PhotoBreak` images between sections (no
+caption, no link — texture; the footer's blanket photo credit covers them) — the full
+gallery lives only on `/photography`.
 
 The `/photography` page itself:
 - Grid gallery (masonry via CSS columns, 1/2/3-col responsive)
 - Source: `data/photos.json` (generated) + `data/photos.ts` (typed re-export) — array of
   `{ src, thumb, alt, title, location, year, orientation, width, height, blurDataURL }`
 - Lightbox on click: keyboard nav (arrows, Esc), swipe on touch, preloaded neighbors,
-  focus moves in on open / returns to the trigger thumb on close
-- 15–20 images. Curate hard — the edit is the portfolio.
+  focus moves in on open / returns to the trigger thumb on close. Already gives portrait
+  shots a substantially larger view than the grid thumb (constrained by viewport height,
+  not a fixed width) — this satisfied Matthew's Sep 2026 ask for "a proper viewer" without
+  changes.
+- **15 images, deliberately ordered water → landscape → golf → W&L** (Sep 2026 re-curate,
+  Matthew's note). Order is the numeric filename prefix in `photos-raw/` — renumber the
+  raw files to reorder, `captions.json` keys must match. Cut from 17 to 15 by dropping
+  the weakest/most redundant golf shots (club-aerial, low-angle-bunker) — golf was 8/17,
+  now 5/15. Curate hard on any future add: the edit is the portfolio.
+- Intro line reads "a curated selection" — was "a working edit" until Matthew flagged it
+  (Sep 2026) as sounding unfinished/tentative; don't reintroduce that phrasing.
 - Link out to the Wix archive and Instagram at the bottom, not at the top.
-
-Status (Aug 2026): may be cut entirely later — kept for now as a quiet secondary page.
 
 ### 5. Contact
 On-page: email + LinkedIn + X as plain underlined links (real `mailto:`/`https:` hrefs,
@@ -163,8 +193,33 @@ is Matthew's LinkedIn headshot, cropped 4:5 for the About section.)
 5. ~~Case study template + pages~~ — cut (Aug 2026). See "Selected Work — cut" above.
 6. ✅ About + Contact — About moved to lead position with headshot (Aug 2026); Contact
    is real email/LinkedIn/X links, verified working.
-7. Performance pass, meta tags, mobile QA — next up.
+7. ✅ Performance pass, meta tags, mobile QA — see Launch checklist below. Custom domain
+   is the one open item, blocked on Matthew (needs his Vercel/registrar login).
 8. Final content proofread — no placeholder text, no broken links
+
+## Launch checklist (Sep 2026)
+- ✅ Favicon: `app/icon.png` + `app/favicon.ico` + `app/apple-icon.png` — teal square,
+  cream serif "M", generated from an SVG (not a designer asset — regenerate the same way
+  if the palette ever changes: script is not checked in, redo via sharp if needed).
+- ✅ OG/Twitter image: `public/og.jpg` (1200×630, ~70 KB) — hero photo + scrim + name +
+  positioning, mirrors the on-site hero. One image reused for `/` and `/photography`.
+- ✅ `app/sitemap.ts`, `app/robots.ts` — both need `export const dynamic = "force-static"`
+  to build under `output: "export"`; omit it and the build fails outright.
+- ✅ Canonical URLs — `alternates.canonical` on root layout and `/photography`.
+- ✅ Keyboard nav — lightbox (arrows/Esc/focus trap, already existed), mobile nav panel
+  (added Esc-to-close + focus-return to the toggle, Sep 2026).
+- ✅ Image loading / CLS — hero, headshot, gallery thumbs, and lightbox all carry explicit
+  width/height; `PhotoBreak` sits in a viewport-height-locked container so it can't shift
+  layout regardless of load timing.
+- ✅ Mobile gallery — verified at 375px: no horizontal overflow, single-column masonry,
+  lightbox opens correctly, portrait images get a large uncluttered view.
+- ⏳ Lighthouse mobile performance — not run against the live Vercel deploy from inside
+  this environment (no browser automation with real network conditions here). Should be
+  effectively fine given static export + optimized images + `next/font`, but confirm via
+  PageSpeed Insights or Chrome DevTools once the custom domain is live.
+- ⏳ Custom domain (`matthewsteuerman.com`) — blocked on Matthew. Needs his Vercel project
+  settings (Domains → add domain) and his registrar's DNS (A/CNAME per Vercel's
+  instructions). Not something an agent without his logins can do.
 
 ## Image pipeline
 Compress before committing. Target: max 2000px on the long edge, WebP, quality ~82.
