@@ -24,10 +24,9 @@ export function About() {
               Philosophy. I graduate in May 2027 with a 3.85 GPA.
             </p>
             <p>
-              On campus, I&rsquo;m Finance &amp; Fundraising Co-Chair for Campus
-              Kitchen and sit on the executive board of the Connolly
-              Entrepreneurship Society. I&rsquo;m interested in private markets
-              and entrepreneurship.
+              On campus, I&rsquo;m on the Executive Board and Finance &amp;
+              Fundraising Committee for Campus Kitchen. I&rsquo;m interested in
+              private markets and entrepreneurship.
             </p>
             <p>
               Outside of school: golf, photography, the gym, mountain biking,

@@ -71,11 +71,18 @@ dumb") — it doubled up with Experience without adding anything a resume-first 
 ### 2. About
 First section after the hero (moved up from last, Aug 2026, to lead with who Matthew is
 before the resume detail). Includes his LinkedIn headshot (`public/img/headshot.webp`,
-cropped 4:5 from the original) alongside flowing first-person prose — W&L, majors, GPA
-3.85, philosophy minor, expected May 2027, Campus Kitchen (Finance & Fundraising
-Co-Chair), Connolly Entrepreneurship Society, private markets/entrepreneurship, and a
-line connecting to the photography. Written in first person, human voice — this is the
-one place the site should sound like a person rather than a resume.
+cropped 4:5 from the original) alongside flowing first-person prose — kept plain, not
+flowery (Matthew's note: an earlier draft was "corny"). Facts: W&L, majors, GPA 3.85,
+philosophy minor, expected May 2027; on campus, Executive Board + Finance & Fundraising
+Committee for Campus Kitchen (current, as of Aug 2026); interested in private markets
+and entrepreneurship; hobbies stated plainly — golf, photography, the gym, mountain
+biking, music.
+
+Matthew is a senior and has dropped some commitments — do not list these as current:
+**Connolly Entrepreneurship Society (CES)** — was a member, not currently involved.
+**W&L Hillel** — was Executive Vice President, not currently involved. Neither appears
+on the site; if past leadership ever needs surfacing, phrase it explicitly in the past
+tense.
 
 ### 3. Experience
 Rendered from `data/experience.ts`. Each entry: company, role, location, dates,

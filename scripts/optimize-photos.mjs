@@ -23,15 +23,31 @@ const QUALITY = 82;
 const THUMB_QUALITY = 74;
 const MAX_BYTES = 400 * 1024;
 
-/** Encode to WebP, stepping quality down until the result fits MAX_BYTES (floor q=58). */
-async function toWebpUnder(pipeline, startQuality) {
-  let q = startQuality;
-  let buf = await pipeline.clone().webp({ quality: q }).toBuffer();
-  while (buf.length > MAX_BYTES && q > 58) {
-    q -= 6;
-    buf = await pipeline.clone().webp({ quality: q }).toBuffer();
+/**
+ * Encode the full-size rendition to WebP under MAX_BYTES. Steps quality down
+ * first (82 → 58); if a busy, high-frequency photo (dense foliage, fine
+ * texture) still won't fit at the quality floor, steps the long edge down
+ * too (2000 → 1400) and retries. Always returns *something* under budget.
+ */
+async function encodeFullUnderBudget(input, orientation, maxEdge) {
+  const edges = [maxEdge, Math.round(maxEdge * 0.85), Math.round(maxEdge * 0.7)];
+  let best = null;
+  for (const edge of edges) {
+    const pipeline = sharp(input).resize({
+      width: orientation === "landscape" ? edge : undefined,
+      height: orientation === "portrait" ? edge : undefined,
+      withoutEnlargement: true,
+    });
+    let q = QUALITY;
+    let buf = await pipeline.clone().webp({ quality: q }).toBuffer();
+    while (buf.length > MAX_BYTES && q > 58) {
+      q -= 6;
+      buf = await pipeline.clone().webp({ quality: q }).toBuffer();
+    }
+    best = { buf, q, edge };
+    if (buf.length <= MAX_BYTES) return best;
   }
-  return { buf, q };
+  return best; // smallest/lowest-quality attempt, even if still over
 }
 
 await mkdir(OUT_DIR, { recursive: true });
@@ -58,12 +74,11 @@ for (const file of files) {
   const { width, height } = await sharp(input).metadata();
   const orientation = width >= height ? "landscape" : "portrait";
 
-  const fullPipe = sharp(input).resize({
-    width: orientation === "landscape" ? FULL_EDGE : undefined,
-    height: orientation === "portrait" ? FULL_EDGE : undefined,
-    withoutEnlargement: true,
-  });
-  const { buf: full, q: fullQ } = await toWebpUnder(fullPipe, QUALITY);
+  const { buf: full, q: fullQ, edge: fullEdge } = await encodeFullUnderBudget(
+    input,
+    orientation,
+    FULL_EDGE,
+  );
 
   const thumb = await sharp(input)
     .resize({
@@ -86,7 +101,7 @@ for (const file of files) {
   const overweight = full.length > MAX_BYTES;
   if (overweight) warnings++;
   console.log(
-    `  ${slug}.webp  ${(full.length / 1024).toFixed(0)} KB @q${fullQ}` +
+    `  ${slug}.webp  ${(full.length / 1024).toFixed(0)} KB @q${fullQ}, ${fullEdge}px` +
       `  (thumb ${(thumb.length / 1024).toFixed(0)} KB)` +
       (overweight ? "  ⚠ still over 400 KB" : ""),
   );

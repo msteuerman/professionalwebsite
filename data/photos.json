@@ -60,6 +60,18 @@
     "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACQAwCdASoUAAsAPxF0sFCsJqSisAgBgCIJZQC7ABOuNSeHLg8AAP5wcC6oorrh4TCyL1DoOHVIv/g9AauVMy2RBka2yTfPcHJz4AAA"
   },
   {
+    "src": "/photos/06-lake-among-trees.webp",
+    "thumb": "/photos/06-lake-among-trees-thumb.webp",
+    "alt": "Straight-down aerial of a small lake threading through dense woodland in fall color, with one cluster of trees turned bright pink.",
+    "title": "A Lake Amongst the Trees",
+    "location": "New York",
+    "year": 2023,
+    "orientation": "landscape",
+    "width": 1400,
+    "height": 788,
+    "blurDataURL": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAAAQBACdASoUAAsAPxFwsFAsJiSisAgBgCIJbAC1B8ABo+0UuBP1KgZgAAD9ItmaBuWnKuEoZfPvrAGR+vu9g0K1SvVYquZz1kMAWJm/BSnGGGXNIPBTSH93LE2px2og0m+RRP/o696ktzKiGl3GY02qQxbXiiDlKLAAAA=="
+  },
+  {
     "src": "/photos/07-golden-hour-flare.webp",
     "thumb": "/photos/07-golden-hour-flare-thumb.webp",
     "alt": "Aerial of a golf fairway at sunrise, low sun flaring through bare trees and casting long shadows across the grass.",

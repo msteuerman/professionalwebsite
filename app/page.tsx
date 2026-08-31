@@ -13,8 +13,8 @@ export default function Home() {
       <About />
 
       <PhotoBreak
-        src="/photos/08-twilight-course.webp"
-        alt="Aerial of a golf green and bunkers under a deep magenta twilight sky scattered with faint stars."
+        src="/photos/06-lake-among-trees.webp"
+        alt="Straight-down aerial of a small lake threading through dense woodland in fall color, with one cluster of trees turned bright pink."
       />
 
       <Experience />
