@@ -84,16 +84,16 @@
     "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAwCdASoUAAsAPxFysFAsJqSisAgBgCIJZgC7ACP7oawXKM/ytbAAAP6yLP0ZMFu5rbsjN/freTX+9GfKPb41zuYc+Bwe0dv69SxCWIjfpBEQvWv3j1AAAAA="
   },
   {
-    "src": "/photos/08-twilight-course.webp",
-    "thumb": "/photos/08-twilight-course-thumb.webp",
-    "alt": "Aerial of a golf green and bunkers under a deep magenta twilight sky scattered with faint stars.",
-    "title": "Blue Hour",
-    "location": "Winged Foot Golf Club, Mamaroneck, New York",
+    "src": "/photos/08-storm-lake.webp",
+    "thumb": "/photos/08-storm-lake-thumb.webp",
+    "alt": "Aerial of a lake winding through dense forest, dark storm clouds overhead breaking to a band of orange sunset on the horizon.",
+    "title": "A Dramatic Sunset Over the Lake",
+    "location": "New York",
     "year": 2022,
     "orientation": "landscape",
-    "width": 2000,
-    "height": 1125,
-    "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAACQAwCdASoUAAsAPxF0sVCsJqSisAgBgCIJYwAAXe7jIrGCS3YAAP0rKg9b0e+a2Yhn3Iom+cs6HYBCRNGBzzo/80MB83BVKAA="
+    "width": 1440,
+    "height": 810,
+    "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQBACdASoUAAsAPxF0sVCsJqSisAgBgCIJYwCdEf/gOzmmn2MUv4IzAAD+eFuDMEBlHvKtApAoCnnCLvT4ybBvG+cAjg9cVFze7nW/WLrwlc+nnCgnuZig3vSaOuAA"
   },
   {
     "src": "/photos/09-fall-foliage-aerial.webp",
