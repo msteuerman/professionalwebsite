@@ -38,13 +38,13 @@ export function Experience() {
 
               <div>
                 <p className="font-sans text-sm font-medium">{entry.role}</p>
-                <p className="mt-3 font-sans text-base leading-relaxed text-foreground/80">
+                <p className="mt-3 font-serif text-[19px] leading-relaxed text-foreground/85">
                   {entry.body}
                 </p>
                 {entry.outcome ? (
-                  <p className="mt-4 font-sans text-sm">
+                  <p className="mt-4 font-serif text-base text-foreground/85">
                     <span className="text-accent">→</span>{" "}
-                    <span className="text-foreground/80">{entry.outcome}</span>
+                    {entry.outcome}
                   </p>
                 ) : null}
               </div>
