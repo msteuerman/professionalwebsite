@@ -28,8 +28,9 @@ export default function PhotographyPage() {
       </p>
       <h1 className="mt-4 font-serif text-h1">Photography</h1>
       <p className="mt-4 max-w-2xl font-sans text-base leading-relaxed text-foreground/80">
-        Mostly shot from a drone — coastlines, and the golf courses I grew up
-        on. A curated selection; the fuller archive is linked below.
+        Mostly shot from a drone — coastlines, landscapes, and the golf
+        courses I grew up on. A curated selection; the fuller archive is
+        linked below.
       </p>
 
       <Gallery />

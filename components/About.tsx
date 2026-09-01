@@ -14,22 +14,25 @@ export function About() {
             alt="Portrait of Matthew Steuerman"
             width={900}
             height={1125}
+            loading="lazy"
+            decoding="async"
             className="aspect-[4/5] w-full max-w-[260px] object-cover"
           />
 
           <div className="max-w-2xl space-y-5 font-sans text-base leading-relaxed text-foreground/85">
             <p>
-              I&rsquo;m a senior at Washington &amp; Lee University, studying
-              Business Administration and Finance/Accounting with a minor in
-              Philosophy. I graduate in May 2027 with a 3.85 GPA, President&rsquo;s
-              List, and a Phi Sigma Tau induction.
+              I&rsquo;m a senior at Washington &amp; Lee University, majoring in
+              Business Administration with concentrations in Finance and
+              Accounting and a minor in Philosophy. I graduate in May 2027 with
+              a 3.85 GPA and have been named to the President&rsquo;s List and
+              inducted into Phi Sigma Tau, the philosophy honor society.
             </p>
             <p>
-              On campus, I&rsquo;m on the Executive Board and Finance &amp;
-              Fundraising Committee for Campus Kitchen. I was also a member of
-              the Connolly Entrepreneurship Society and served as Executive
-              Vice President of W&amp;L Hillel. I&rsquo;m interested in private
-              markets and entrepreneurship.
+              On campus, I serve on the Executive Board of Campus Kitchen and
+              co-chair its Finance &amp; Fundraising Committee. I was also a
+              member of the Connolly Entrepreneurship Society and served as
+              Executive Vice President of W&amp;L Hillel. I&rsquo;m interested in
+              private markets and entrepreneurship.
             </p>
             <p>
               Outside of school: golf, photography, the gym, mountain biking,

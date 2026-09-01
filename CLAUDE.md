@@ -74,11 +74,14 @@ doubled up with Experience without adding anything a resume-first site needs.
 First section after the hero (moved up from last, Aug 2026, to lead with who Matthew is
 before the resume detail). Includes his LinkedIn headshot (`public/img/headshot.webp`,
 cropped 4:5 from the original) alongside flowing first-person prose — kept plain, not
-flowery (Matthew's note: an earlier draft was "corny"). Facts: W&L, majors, GPA 3.85,
-philosophy minor, expected May 2027; on campus, Executive Board + Finance & Fundraising
-Committee for Campus Kitchen (current, as of Aug 2026); interested in private markets
-and entrepreneurship; hobbies stated plainly — golf, photography, the gym, mountain
-biking, music.
+flowery (Matthew's note: an earlier draft was "corny"). Facts, precisely: Business
+Administration is the **major**, Finance and Accounting are **concentrations** within it
+(not a double major, not "Finance/Accounting" as a combined subject — Sep 2026 correction),
+philosophy minor, GPA 3.85, President's List, Phi Sigma Tau induction, expected May 2027;
+on campus, Executive Board of Campus Kitchen and **co-chair** of its Finance &
+Fundraising Committee (a leadership role, not just membership — Sep 2026 correction;
+current as of Sep 2026); interested in private markets and entrepreneurship; hobbies
+stated plainly — golf, photography, the gym, mountain biking, music.
 
 Matthew is a senior and has dropped some commitments. Two now appear on the page, but
 explicitly in the past tense — never re-promote either to present tense as "current":
@@ -109,6 +112,11 @@ Rendered from `data/experience.ts`. Each entry: company, role, location, dates,
 - Data Intensity — sales enablement (Summers 2021–22)
 
 Rule: nothing confidential from Deutsche Bank or Harri. Describe scope and skills, not deal specifics.
+
+Deutsche Bank's capstone sentence was rewritten (Sep 2026) — "The capstone evaluated...
+and presented..." made the capstone itself the subject of both verbs, which doesn't
+parse ("the capstone... presented"). Now "I evaluated... and presented..." with Matthew
+as the subject throughout.
 
 Body copy was tightened ~20% (Sep 2026, Matthew's launch-checklist note) — cut filler
 ("Day to day meant...") and merged clauses rather than dropping technical nouns; every
@@ -220,6 +228,26 @@ is Matthew's LinkedIn headshot, cropped 4:5 for the About section.)
 - ⏳ Custom domain (`matthewsteuerman.com`) — blocked on Matthew. Needs his Vercel project
   settings (Domains → add domain) and his registrar's DNS (A/CNAME per Vercel's
   instructions). Not something an agent without his logins can do.
+
+### Second pass (Sep 2026, copy-precision + QA round)
+- ✅ `app/not-found.tsx` — was the bare default Next.js error page (unstyled, no
+  header/footer, generic "404: This page could not be found."). Now on-brand: same
+  Container/type-scale as every other page, "Back home" link. Next auto-emits
+  `noindex` for the not-found route — don't also set `robots` in this file's metadata,
+  it'll double up the `<meta name="robots">` tag.
+- ✅ Footer's "Navigate"/"Elsewhere"/"Contact" column labels were `<h2>` — duplicated the
+  real "Contact" section heading in the document outline and added stray same-level
+  headings after it. Each footer `<nav>` already has its own `aria-label`, so the labels
+  are now plain `<p>` (same visual style, `ColumnHeading` in `components/SiteFooter.tsx`).
+- ✅ Company logos in Experience now carry explicit `width`/`height` (intrinsic pixel
+  size, recorded per-entry as `logoWidth`/`logoHeight` in `data/experience.ts`) plus
+  `loading="lazy" decoding="async"` — were unsized `<img>`s before, a CLS risk even
+  though the fixed `h-6` wrapper made it low-impact in practice. About's headshot got the
+  same `loading`/`decoding` treatment.
+- Audited and found already clean: no dangling links to the removed résumé PDF or the
+  two cut gallery photos, no `/work` references, sitemap/robots/canonical all still
+  correct, mobile has no horizontal overflow with the longer About copy, lightbox and
+  mobile-nav keyboard behavior unaffected.
 
 ## Image pipeline
 Compress before committing. Target: max 2000px on the long edge, WebP, quality ~82.

@@ -11,9 +11,12 @@ const elsewhere = [
   { label: "Full photo archive", href: site.links.photoArchive },
 ];
 
+// Not a heading: each <nav> below already carries its own aria-label, so a
+// real <h2> here would just add a same-level, same-text duplicate of the
+// page's actual "Contact" section to the document outline.
 function ColumnHeading({ children }: { children: string }) {
   return (
-    <h2 className="text-eyebrow font-sans uppercase text-muted">{children}</h2>
+    <p className="text-eyebrow font-sans uppercase text-muted">{children}</p>
   );
 }
 
