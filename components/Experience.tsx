@@ -37,7 +37,9 @@ export function Experience() {
               </div>
 
               <div>
-                <p className="font-sans text-sm font-medium">{entry.role}</p>
+                <h4 className="font-serif text-xl italic leading-snug tracking-tight text-foreground">
+                  {entry.role}
+                </h4>
                 <p className="mt-3 font-serif text-[19px] leading-relaxed text-foreground/85">
                   {entry.body}
                 </p>
